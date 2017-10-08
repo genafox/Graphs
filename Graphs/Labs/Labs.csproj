@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D48E831A-3ACE-4BA7-9382-D66079A2D2CA}</ProjectGuid>
+    <ProjectGuid>{A15A96F6-3A5E-480E-A6EB-DA188ADE8881}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleRunner</RootNamespace>
-    <AssemblyName>ConsoleRunner</AssemblyName>
+    <RootNamespace>Labs</RootNamespace>
+    <AssemblyName>Labs</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab_3\DinicAlgorithm.cs" />
+    <Compile Include="Lab_3\MaxFlowRunner.cs" />
+    <Compile Include="Lab_4\EdmondKarpAlgorithm.cs" />
+    <Compile Include="Lab_4\CostFlowMatrix.cs" />
+    <Compile Include="Lab_4\MaxFlowMinCostRunner.cs" />
+    <Compile Include="Lab_5\Cell.cs" />
+    <Compile Include="Lab_5\CostMatrix.cs" />
+    <Compile Include="Lab_5\Edge.cs" />
+    <Compile Include="Lab_5\FordBellmanAlgorithm.cs" />
+    <Compile Include="Lab_5\LittleAlgotithm.cs" />
+    <Compile Include="Lab_5\ShortGamiltonCycleResult.cs" />
+    <Compile Include="Lab_5\TravellingSalesmanProblemRunner.cs" />
+    <Compile Include="Lab_5\VertexShortDistancesResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PrimAlgorithm\PrimAlgorithm.csproj">
-      <Project>{D1264EDF-84E5-4BA4-ADAE-CB12D208DB9D}</Project>
-      <Name>PrimAlgorithm</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
